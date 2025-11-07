@@ -41,8 +41,8 @@ dependencies {
     // Spring Validation
     implementation 'org.springframework.boot:spring-boot-starter-validation'
 
-    // Swagger
-    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.9'
+    // Swagger Netty
+    implementation 'org.springdoc:springdoc-openapi-starter-webflux-ui:2.8.14'
 
     // AOP
     implementation 'org.springframework:spring-aop:6.2.9'
