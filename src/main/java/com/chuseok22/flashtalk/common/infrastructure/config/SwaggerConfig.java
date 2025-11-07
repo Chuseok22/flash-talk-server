@@ -19,7 +19,7 @@ import org.springframework.context.annotation.Configuration;
     info = @Info(
         title = "🎫 Flash Talk 🎫",
         description = """
-            ### 🌐 Meet Time 웹사이트 🌐 : https://talk.chuseok22.com
+            ### 🌐 Flash Talk 웹사이트 🌐 : https://talk.chuseok22.com
             [**웹사이트 바로가기**](https://talk.chuseok22.com)
             
             ### 💻 **GitHub 저장소**
