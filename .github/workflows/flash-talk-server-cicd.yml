@@ -18,7 +18,7 @@ env:
   MOUNT_DIR: "/volume1/project/flash-talk/server"
   SPRING_PROFILE_MAIN: "prod"
   SPRING_PROFILE_TEST: "prod"
-  NGINX_RP_CONF: "/etc/nginx/sites-enabled/example.conf"
+  NGINX_RP_CONF: "/etc/nginx/sites-enabled/server.ReverseProxy.conf"
   NGINX_BACKUP_DIR: "/volume1/project/flash-talk/server/nginx/backups"
 
 jobs:
