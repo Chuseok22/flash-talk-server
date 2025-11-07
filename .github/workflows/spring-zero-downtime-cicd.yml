@@ -1,25 +1,25 @@
-name: workflow-name # 워크플로 이름
+name: flash-talk-server-cicd # 워크플로 이름
 
 on:
   push:
     branches: # 워크플로 대상 브랜치
-#      - main
-#      - test
+      - main
+      - test
 
 env:
-  PROJECT_NAME: my-project # 프로젝트 명
+  PROJECT_NAME: flash-talk # 프로젝트 명
   DOCKERHUB_REPO: ${{ secrets.DOCKERHUB_USERNAME }}
   APP_IMAGE_SUFFIX: "-back"
-  DOMAIN_NAME: "example.com"
-  BLUE_PORT: "8080"
-  GREEN_PORT: "8081"
-  TEST_PORT: "8082"
+  DOMAIN_NAME: "api.talk.chuseok22.com"
+  BLUE_PORT: "8081"
+  GREEN_PORT: "8082"
+  TEST_PORT: "8083"
   APP_EXPOSE_PORT: "8080"
-  MOUNT_DIR: "/volume1/project"
+  MOUNT_DIR: "/volume1/project/flash-talk/server"
   SPRING_PROFILE_MAIN: "prod"
   SPRING_PROFILE_TEST: "prod"
   NGINX_RP_CONF: "/etc/nginx/sites-enabled/example.conf"
-  NGINX_BACKUP_DIR: "/volume1/project/nginx/backups"
+  NGINX_BACKUP_DIR: "/volume1/project/flash-talk/server/nginx/backups"
 
 jobs:
   build:
