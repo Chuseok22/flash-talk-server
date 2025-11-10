@@ -56,7 +56,7 @@ public class ChatWebsocketHandler implements WebSocketHandler {
       }
 
       if (type.equals("message")) {
-        String nickname = session.getAttributes().get("nickname").toString();
+        String nickname = (String) session.getAttributes().get("nickname");
         if (nickname == null || nickname.isBlank()) {
           nickname = "익명";
           session.getAttributes().put("nickname", nickname);

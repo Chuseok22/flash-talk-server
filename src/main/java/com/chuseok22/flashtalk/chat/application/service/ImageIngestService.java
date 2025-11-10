@@ -41,7 +41,7 @@ public class ImageIngestService {
     String dataUrl = "data:" + contentType + ";base64," + base64;
 
     return storageService.save(bytes, contentType)
-      .onErrorResume(ex -> Mono.empty())
+      .doOnError(ex  -> log.error("이미지 외부 스토리지 저장 실패: mediaId={}", mediaId, ex))
       .thenReturn(new IngestResult(mediaId, contentType, dataUrl, bytes.length));
   }
 
