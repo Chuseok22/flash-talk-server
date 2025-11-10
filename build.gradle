@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'com.chuseok22'
-version = '0.0.2'
+version = '1.0.0'
 description = 'flash-talk-server'
 
 java {
