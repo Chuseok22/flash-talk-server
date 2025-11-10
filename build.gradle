@@ -51,6 +51,7 @@ dependencies {
     testImplementation 'io.projectreactor:reactor-test'
     testImplementation 'org.springframework.amqp:spring-rabbit-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    runtimeOnly "io.netty:netty-resolver-dns-native-macos:4.2.7.Final:osx-aarch_64"
 }
 
 tasks.named('test') {
